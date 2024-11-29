@@ -6,21 +6,63 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Register</title>
-</head>
-<body>
+<body style="text-align: center; font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px;">
+<h1 style="font-size: 24px; margin-bottom: 10px;">Get started</h1>
+<p style="font-size: 14px; color: gray; margin-bottom: 20px;">Create your account now</p>
+<form style="display: inline-block; text-align: left; width: 300px;">
 
+    <label for="fullname" style="font-size: 14px;">Full name:</label>
+    <input type="text" id="fullname" name="fullname" maxlength="50" required
+           style="width: 100%; margin-bottom: 10px; padding: 5px;">
 
+    <label for="email" style="font-size: 14px;">Email:</label>
+    <input type="email" id="email" name="email" required
+           style="width: 100%; margin-bottom: 10px; padding: 5px;">
 
+    <label for="favorite-day" style="font-size: 14px;">Favorite Day:</label>
+    <select id="favorite-day" name="favorite-day" required style="width: 100%; margin-bottom: 10px; padding: 5px;">
+        <optgroup label="Weekdays">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+        </optgroup>
+        <optgroup label="Weekend">
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+        </optgroup>
+    </select>
 
+    <label for="password" style="font-size: 14px;">Password:</label>
+    <input type="password" id="password" name="password" minlength="8" required
+           style="width: 100%; margin-bottom: 10px; padding: 5px;">
 
+    <label for="confirm-password" style="font-size: 14px;">Confirm Password:</label>
+    <input type="password" id="confirm-password" name="confirm-password" minlength="8" required
+           style="width: 100%; margin-bottom: 10px; padding: 5px;">
 
+    <label for="age" style="font-size: 14px;">Age:</label>
+    <input type="number" id="age" name="age" min="0" required
+           style="width: 100%; margin-bottom: 10px; padding: 5px;">
 
+    <label for="favorite-color" style="font-size: 14px;">Favorite Color:</label>
+    <input type="color" id="favorite-color" name="favorite-color"
+           style="width: 100%; margin-bottom: 10px; padding: 5px;">
 
+    <input type="checkbox" id="terms" name="terms" required
+           style="margin-bottom: 10px;">
+    <label for="terms" style="font-size: 14px;">I agree to the terms</label>
 
-
-
-
-
-hui
+    <button type="submit"
+            style="width: 100%; padding: 10px; margin-top: 10px; background-color: blue; color: white; border: none;">
+        Sign Up
+    </button>
+</form>
+<p style="margin-top: 10px; font-size: 14px;">Have an account?
+    <a href="#" style="color: blue;">Login</a>
+</p>
 </body>
 </html>
+
+
