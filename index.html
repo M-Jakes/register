@@ -6,17 +6,18 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Register</title>
-<body style="text-align: center; font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px;">
-<h1 style="font-size: 24px; margin-bottom: 10px;">Get started</h1>
-<p style="font-size: 14px; color: gray; margin-bottom: 20px;">Create your account now</p>
-<form style="display: inline-block; text-align: left; width: 300px;">
+<body style="text-align: center; font-family: Arial, sans-serif; background-color: rebeccapurple; padding: 20px;">
+
+<form style="display: inline-block;  background-color: lightgrey; background-size: 500px 500px; padding: 30px; text-align: left; width: 300px; border-radius: 50px;">
+    <h1 style="font-size: 24px; margin-bottom: 10px;">Get started</h1>
+    <p style="font-size: 14px; color: cornflowerblue; margin-bottom: 20px;">Create your account now</p>
 
     <label for="fullname" style="font-size: 14px;">Full name:</label>
-    <input type="text" id="fullname" name="fullname" maxlength="50" required
+    <input type="text" id="fullname" name="fullname" maxlength="50" required placeholder="Aliam Ah Alahar"
            style="width: 100%; margin-bottom: 10px; padding: 5px;">
 
     <label for="email" style="font-size: 14px;">Email:</label>
-    <input type="email" id="email" name="email" required
+    <input type="email" id="email" name="email" required placeholder="yourmail@"
            style="width: 100%; margin-bottom: 10px; padding: 5px;">
 
     <label for="favorite-day" style="font-size: 14px;">Favorite Day:</label>
@@ -35,11 +36,11 @@
     </select>
 
     <label for="password" style="font-size: 14px;">Password:</label>
-    <input type="password" id="password" name="password" minlength="8" required
+    <input type="password" id="password" name="password" minlength="8" required placeholder="********"
            style="width: 100%; margin-bottom: 10px; padding: 5px;">
 
     <label for="confirm-password" style="font-size: 14px;">Confirm Password:</label>
-    <input type="password" id="confirm-password" name="confirm-password" minlength="8" required
+    <input type="password" id="confirm-password" name="confirm-password" minlength="8" required placeholder="Reenter password"
            style="width: 100%; margin-bottom: 10px; padding: 5px;">
 
     <label for="age" style="font-size: 14px;">Age:</label>
@@ -52,16 +53,30 @@
 
     <input type="checkbox" id="terms" name="terms" required
            style="margin-bottom: 10px;">
-    <label for="terms" style="font-size: 14px;">I agree to the terms</label>
+    <label for="terms" style="font-size: 14px;">I agree to the terms of service</label>
 
     <button type="submit"
             style="width: 100%; padding: 10px; margin-top: 10px; background-color: blue; color: white; border: none;">
         Sign Up
     </button>
+    <p style="margin-top: 10px; font-size: 14px; text-align: center;">Have an account?
+        <a href="#" style="color: blue;">Login</a>
+    </p>
+    <p>Do you like this page? Give it a rating right here :)
+        <label for="Rating" style="font-size: 14px;"></label>
+        <select id="Rating" name="Rating" required style="width: 100%; margin-bottom: 10px; padding: 5px;">
+            <optgroup label="Ratings">
+                <option value="Excellent">Excellent</option>
+                <option value="Above average">Above average</option>
+                <option value="Good">Good</option>
+                <option value="Minimum pass">Minimum pass</option>
+                <option value="Improvement needed">Improvement needed</option>
+            </optgroup>
+        </select>
+    </p>
 </form>
-<p style="margin-top: 10px; font-size: 14px;">Have an account?
-    <a href="#" style="color: blue;">Login</a>
-</p>
+
+
 </body>
 </html>
 
